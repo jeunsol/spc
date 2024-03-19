@@ -1,0 +1,329 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* header */
+header{
+	position: fixed;
+	width:100%;
+	left: 0;
+	top:0;
+	z-index: 100;
+}
+.inner{
+	position: relative;
+	width: 1400px;
+	margin: 0 auto;
+	padding-top: 50px;
+    margin-bottom: 50px;
+}
+span.hide-txt{
+	display: none;
+}
+h1.logo{
+	text-align: center;
+}
+h1.logo img{
+	width: 80px;
+	padding-right: 20px;
+}
+nav{
+	height: 30px;
+	margin-top: -30px;
+}
+li.left{
+	float: left;
+	margin-right: 100px;
+}
+li.right{
+	float: right;
+	margin-left: 100px;
+}
+ul.gnb > li:nth-child(4){
+	margin-right: 120px;
+}
+ul.gnb li a{
+	font-weight: bold;
+}
+ul.gnb li a:hover{
+	color:#36b4e5;
+}
+
+#btn_lang{
+	background: url(../img/hamburgermenu.png) no-repeat;
+	width:25px;
+	height:25px;
+	background-size: contain;
+	position: absolute;
+	right: 0;
+	bottom:4px;
+}
+#btn_lang:hover{
+	background: url(../img/hamburgermenu_h.png) no-repeat;
+	width:25px;
+	height:25px;
+	background-size: contain;
+	cursor: pointer;
+}
+
+ul.submenu{
+	display: none;
+}
+
+header.on{
+	position: fixed;
+	width:100%;
+	left: 0;
+	top:0;
+	z-index: 100;
+    background-color: #fff;	
+}
+header.in{
+	border-bottom: 1px solid #eee;
+}
+ul.gnb li a.on{
+	color: #111;
+}
+ul.gnb li a.on:hover{
+	color:#36b4e5;
+}
+.inner.on{
+	position: relative;
+	width: 1400px;
+	margin: 0 auto;
+	padding-top: 40px;
+    padding-bottom: 30px;
+}
+#btn_lang.on{
+	background: url(../img/hamburgermenu_on.png) no-repeat;
+	width:25px;
+	height:25px;
+	background-size: contain;
+	position: absolute;
+	right: 0;
+	bottom:34px;
+}
+#btn_lang.on:hover{
+	background: url(../img/hamburgermenu_h.png) no-repeat;
+	width:25px;
+	height:25px;
+	background-size: contain;
+	cursor: pointer;
+}
+.logo img.on{
+	content: url(../img/logo_on.png);
+}
+
+
+#sitemapInner.open{
+	display: block;
+}
+#sitemapInner{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(../img/sitemap_bg.jpeg);
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+	display: none;
+}
+
+.area{
+	width: 1100px;
+	margin: 0 auto;
+}
+.area > div{
+	position: relative;
+}
+.txt_up{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: -100px;
+	display: none;
+}
+.area button{
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #333;
+	border: none;
+	cursor: pointer;
+}
+.area button i{
+	background: url(../img/close.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	position: absolute;
+	top: -5px;
+	right: -6px;
+	display: block;
+}
+
+.sitemap-1dep{
+	margin-top: 25%;
+}
+.sitemap-1dep > li{
+	width: 900px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.sitemap-2dep{
+	float: right;
+	width: 690px;
+	margin-top: -33px;
+}
+.sitemap-2dep li{
+	float: left;
+	margin-left: 50px;
+}
+.sitemap-1dep h3{
+	font-size: 30px;
+	color: #fff;
+	width: 200px;
+}
+.sitemap-2dep li a{
+	font-size: 17px;
+	color: rgba(255,255,255,0.8);
+}
+
+
+
+@media (max-width: 1420px) {
+	.inner{
+		width: 97%;
+		margin: auto;
+		padding-top: 3%;
+    	margin-bottom: 3%;
+	}
+	.inner.on{
+		width: 97%;
+		margin: auto;
+		padding-top: 2%;
+    	padding-bottom: 1.5%;
+	}
+	li.left{
+		margin-right: 7%;
+	}
+	li.right{
+		margin-left: 7%;
+	}
+	ul.gnb > li:nth-child(4){
+		margin-right: 7%;
+	}
+	h1.logo img{
+		padding-right: 0;
+	}
+	h1.logo{
+		margin-left: 0;
+	}
+	#btn_lang.on{
+		bottom: 30%;
+	}
+}
+
+@media (max-width: 1199px) {
+	.inner{
+		width: 96%;
+	}
+	.inner.on{
+		width: 96%;
+	}
+	
+	.area{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.txt_up{
+		right: 0;
+	}
+}
+
+@media (max-width: 1100px) {
+	ul.gnb{
+		display: none;
+	}
+	h1.logo{
+		margin-right: 89%;
+	}
+	#btn_lang{
+		margin-right: 2%;
+	}
+	#btn_lang.on{
+		bottom: 26%;
+	}
+}
+
+@media (max-width: 991px){
+	h1.logo{
+		margin-right: 88%;
+	}
+	
+	.area{
+		margin-top: 25%;
+	}
+	.txt_up{
+		right: -20px;
+	}
+}
+
+@media (max-width: 800px) {
+    h1.logo{
+		margin-right: 86%;
+	}
+	
+	.area{
+		margin-top: 35%;
+	}
+}
+
+@media (max-width: 575.98px) {
+	h1.logo{
+		margin-right: 79%;
+	}
+	
+	.sitemap-2dep{
+		display: none;
+	}
+	.area{
+		margin-top: 50%;
+		width: 60%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
